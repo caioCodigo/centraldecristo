@@ -8,6 +8,14 @@
  */
 angular.module('ApsilonApp')
         .controller('MainCtrl', function ($scope, $position) {
+            
+            $('.carousel').carousel();
+            
+            $scope.mySlides = [
+                'https://staticr1.blastingcdn.com/media/photogallery/2016/11/25/660x290/b_620x273/pastor-genival-bento-foto-divulgacao_999903.jpg',
+                'https://staticr1.blastingcdn.com/media/photogallery/2016/11/25/660x290/b_620x273/pastor-genival-bento-foto-divulgacao_999903.jpg',
+                'https://staticr1.blastingcdn.com/media/photogallery/2016/11/25/660x290/b_620x273/pastor-genival-bento-foto-divulgacao_999903.jpg'
+            ]
             console.log("meu pau azul");
             
             $scope.bar = {

@@ -12,7 +12,7 @@ angular
     'oc.lazyLoad',
     'ui.router',
     'ui.bootstrap',
-    'angular-loading-bar',
+    'angular-loading-bar'
   ])
   .config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider',
     function($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
@@ -33,10 +33,13 @@ angular
               return $ocLazyLoad.load({
                   name: 'ApsilonApp',
                   files: [
+                    'app/scripts/directives/flexslider/flexslider.css',
+                    'app/scripts/directives/flexslider/jquery.flexslider.js',
                     'app/scripts/directives/header/header.js',
                     'app/scripts/directives/header/header-notification/header-notification.js',
                     'app/scripts/directives/sidebar/sidebar.js',
-                    'app/scripts/directives/sidebar/sidebar-search/sidebar-search.js'
+                    'app/scripts/directives/sidebar/sidebar-search/sidebar-search.js',
+                    'app/scripts/directives/flexslider/angular-flexslider.js'
                   ]
                 }),
                 $ocLazyLoad.load({
@@ -77,7 +80,7 @@ angular
                   'app/scripts/directives/dashboard/stats/stats.js',
                   'app/scripts/directives/timeline/timeline.js',
                   'app/scripts/directives/notifications/notifications.js',
-                  'app/scripts/directives/chat/chat.js',
+                  'app/scripts/directives/chat/chat.js'
                 ]
               })
             }
